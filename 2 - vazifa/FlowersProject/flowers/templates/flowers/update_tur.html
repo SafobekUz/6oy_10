@@ -1,0 +1,6 @@
+<form method="POST">
+    {% csrf_token %}
+    <label for="name">Tur Name:</label>
+    <input type="text" name="name" value="{{ tur.name }}">
+    <button type="submit">Update</button>
+</form>

@@ -1,0 +1,10 @@
+{% extends 'flowers/base.html' %}
+
+{% block content %}
+<h2>{{ type.name }} Turidagi Gullar</h2>
+<ul>
+    {% for flower in flowers %}
+    <li>{{ flower.name }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
